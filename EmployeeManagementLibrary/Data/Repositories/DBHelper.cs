@@ -10,7 +10,7 @@ namespace Employee.Management.Data.Repositories
     {
         public string GetConnectionString()
         {
-            return @"Data Source=TESTPOOL\LEARNSQL;Initial Catalog=Training;Integrated Security=True";
+            return @"Data Source=DESKTOP-K98E5UF\MYSQLSERVER;Initial Catalog=Training;Integrated Security=True";
         }
     }
 }
