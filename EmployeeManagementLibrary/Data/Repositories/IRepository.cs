@@ -11,6 +11,5 @@ namespace Employee.Management.Data.Repositories
         void Add(T obj);
         void Delete(int Id);
         IEnumerable<T> GetAll();
-
     }
 }
