@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 
 namespace Employee.Management.Data.Repositories
 {
-    public class EmployeeRepo : IRepostory<Employees>
+    public class EmployeeRepo : IRepository<Employees>
     {
         DBHelper helper;
         public EmployeeRepo()
