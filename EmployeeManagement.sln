@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement", "Emplo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagementLibrary", "EmployeeManagementLibrary\EmployeeManagementLibrary.csproj", "{78C01A00-FA34-4242-978B-F2C6C56C054E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement.DataService", "EmployeeManagement.DataService\EmployeeManagement.DataService.csproj", "{39388D64-5F74-4A97-9BC3-1FD55139AA02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{78C01A00-FA34-4242-978B-F2C6C56C054E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78C01A00-FA34-4242-978B-F2C6C56C054E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78C01A00-FA34-4242-978B-F2C6C56C054E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39388D64-5F74-4A97-9BC3-1FD55139AA02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39388D64-5F74-4A97-9BC3-1FD55139AA02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39388D64-5F74-4A97-9BC3-1FD55139AA02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39388D64-5F74-4A97-9BC3-1FD55139AA02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

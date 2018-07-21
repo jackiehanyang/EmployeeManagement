@@ -23,8 +23,8 @@ namespace Employee.Management.Data.Repositories
             try
             {
                 connection.Open();
-                cmd.CommandText = "Insert into Employees values (@name)";
-                cmd.Parameters.AddWithValue("@name", obj.Name);
+                cmd.CommandText = "Insert into Employees values (@FirstName)";
+                cmd.Parameters.AddWithValue("@FirstName", obj.FirstName);
                 cmd.Connection = connection;
                 cmd.ExecuteNonQuery();  // use this method for the DML statements
             }
