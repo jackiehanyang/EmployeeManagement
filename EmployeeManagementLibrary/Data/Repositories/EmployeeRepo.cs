@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Employee.Management.Data.Entities;
+using EmployeeManagementLibrary.Data.Entities;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace Employee.Management.Data.Repositories
+namespace EmployeeManagementLibrary.Data.Repositories
 {
     public class EmployeeRepo : IRepository<Employees>
     {

@@ -15,7 +15,7 @@
     <RootNamespace>EmployeeManagement.DataService</RootNamespace>
     <AssemblyName>EmployeeManagement.DataService</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -45,6 +45,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -68,9 +69,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="EmployeeManagement.asmx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmployeeManagement.asmx.cs">
+      <DependentUpon>EmployeeManagement.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +87,16 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EmployeeManagement.LINQ\EmployeeManagement.LINQ.csproj">
+      <Project>{99146ef9-e306-4deb-957d-396c050c16dd}</Project>
+      <Name>EmployeeManagement.LINQ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EmployeeManagementLibrary\EmployeeManagementLibrary.csproj">
+      <Project>{78c01a00-fa34-4242-978b-f2c6c56c054e}</Project>
+      <Name>EmployeeManagementLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -97,7 +113,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>53305</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:53305/</IISUrl>
+          <IISUrl>http://localhost/EmployeeManagement.DataService</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
