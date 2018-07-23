@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using EmployeeManagement.LINQ;
+using System.Data.Linq;
 
 namespace EmployeeManagementLibrary.Data.Repositories
 {
@@ -17,7 +18,8 @@ namespace EmployeeManagementLibrary.Data.Repositories
 
         public void Add(Employee obj)
         {
-            throw new NotImplementedException();
+            context.Employees.InsertOnSubmit(obj);
+            context.SubmitChanges();
         }
 
         public void Delete(int Id)
